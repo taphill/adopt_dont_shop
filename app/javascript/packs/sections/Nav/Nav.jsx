@@ -7,13 +7,19 @@ import userLogo from '../../assests/userColor.png'
 function Nav () {
   return (
     <header className="navbar">
-      <div className="left">
-        <img src={mainLogo} alt="Main logo" />
-        <p>Adopt Don't Shop</p>
-      </div>
+      <NavLink to="/">
+        <div className="left">
+          <img src={mainLogo} alt="Main logo" />
+          <p>Adopt Don't Shop</p>
+        </div>
+      </NavLink>
       <div className="right">
         <ul>
-          <li>One</li>
+          <li>
+            <NavLink to="/shelters">
+              Shelters
+            </NavLink>
+          </li>
           <li>Two</li>
           <li>Three</li>
           <li>Four</li>

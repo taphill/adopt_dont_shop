@@ -4,15 +4,16 @@ import './App.scss'
 import Nav from './sections/Nav/Nav'
 import Footer from './sections/Footer/Footer'
 
-function App() {
+function App () {
   return (
     <div className="App">
       <Nav />
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
     </div>
   )
 }
 
 export default App
-
