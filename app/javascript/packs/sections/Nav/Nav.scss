@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 0.2em 1em;
+}
+
+.left {
+  display: flex;
+  align-items: center
+}
+
+.left img {
+  height: auto;
+  max-width: 1.6rem;
+}
+
+.left p {
+  color: white;
+  font-weight: bold;
+  margin-left: 0.4em;
+}
+
+.right {
+  display: flex;
+  align-items: center
+}
+
+.right ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.right li {
+  margin-right: 1em;
+  color: white;
+}
+
+.right img {
+  height: auto;
+  max-width: 1.6rem;
+}
