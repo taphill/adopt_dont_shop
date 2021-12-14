@@ -1,11 +1,15 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import './App.scss'
+import Nav from './sections/Nav/Nav'
+import Footer from './sections/Footer/Footer'
 
 function App() {
   return (
     <div className="App">
-      <h1>Adopt Don't Shop</h1>
+      <Nav />
       <Outlet />
+      <Footer />
     </div>
   )
 }
