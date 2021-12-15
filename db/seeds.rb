@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Shelter.destroy_all
+
+Shelter.create(name: 'Vivamus At', city: 'South Andrew', rank: 1, foster_program: true)
+Shelter.create(name: 'Sed Vulputate', city: 'Lake Skyefurt', rank: 2, foster_program: true)
+Shelter.create(name: 'Nulla Facilisi', city: 'Hilmaton', rank: 3, foster_program: false)

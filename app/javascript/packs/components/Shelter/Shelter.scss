@@ -1,0 +1,32 @@
+.shelter {
+  margin: 1rem;
+  border: 0.2rem solid black;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  min-width: 20rem;
+  background-color: ivory;
+}
+
+.shelter h1, h3 {
+  margin: 0;
+}
+
+.shelter h2 {
+  margin: 1em 0;
+}
+
+.shelter div {
+  display: flex;
+  align-items: center;
+}
+
+.shelter .rank-image {
+  width: 2em;
+  height: 2em;
+  padding-right: 0.5em;
+}
+
+.shelter .foster-image {
+  width: 2em;
+  padding-left: 0.5em;
+}
