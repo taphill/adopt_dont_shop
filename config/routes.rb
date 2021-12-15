@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :shelters, only: [:index]
+      resources :pets, only: [:index]
     end
   end
 

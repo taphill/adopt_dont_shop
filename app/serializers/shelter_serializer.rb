@@ -3,5 +3,5 @@
 class ShelterSerializer
   include JSONAPI::Serializer
 
-  attributes :name, :city, :rank, :foster_program
+  attributes :name, :city, :state, :rank, :foster_program
 end

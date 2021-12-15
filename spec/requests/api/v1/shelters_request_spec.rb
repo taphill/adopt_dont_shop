@@ -22,6 +22,8 @@ RSpec.describe 'Api/V1/Shelters', type: :request do
       it { expect(body[:data].first[:attributes][:name]).to be_a(String) }
       it { expect(body[:data].first[:attributes]).to have_key(:city) }
       it { expect(body[:data].first[:attributes][:city]).to be_a(String) }
+      it { expect(body[:data].first[:attributes]).to have_key(:state) }
+      it { expect(body[:data].first[:attributes][:state]).to be_a(String) }
       it { expect(body[:data].first[:attributes]).to have_key(:rank) }
       it { expect(body[:data].first[:attributes][:rank]).to be_a(Integer) }
       it { expect(body[:data].first[:attributes]).to have_key(:foster_program) }
