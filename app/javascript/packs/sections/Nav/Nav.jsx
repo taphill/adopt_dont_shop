@@ -20,7 +20,11 @@ function Nav () {
               Shelters
             </NavLink>
           </li>
-          <li>Two</li>
+          <li>
+            <NavLink to="/pets">
+              Pets
+            </NavLink>
+          </li>
           <li>Three</li>
           <li>Four</li>
         </ul>
