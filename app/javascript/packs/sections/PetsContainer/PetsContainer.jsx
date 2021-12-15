@@ -1,9 +1,26 @@
 import React from 'react'
 import './PetsContainer.scss'
 import Pet from '../../components/Pet/Pet'
-import petData from '../../petData'
+import fetchPets from '../../api/v1/pets'
 
 function PetsContainer () {
+  const [petData, setPetData] = React.useState({
+    status: 'idle',
+    data: [],
+    error: null
+  })
+
+  React.useEffect(() => {
+    fetchPets().then(
+      pets => {
+        setPetData({ status: 'resolved', data: pets.data })
+      },
+      error => {
+        setPetData({ status: 'rejected', error })
+      }
+    )
+  }, [])
+
   const pets = petData.data.map((pet) => {
     return (
       <Pet
